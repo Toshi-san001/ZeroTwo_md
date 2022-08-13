@@ -1,5 +1,6 @@
 module.exports = {
 	name: "kick",
+alias: ["kumamake"],
 	use: "<tag>",
 	category: "group",
 	desc: "kick members group",
@@ -16,7 +17,7 @@ module.exports = {
 			: q.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
 		await conn
 			.groupParticipantsUpdate(msg.from, [participant], "remove")
-			.then((res) => msg.reply("Member Removed Successfully 🍬"))
+			.then((res) => msg.reply("Member Removed Successfully... 🥷 (Kumamake)"))
 			.catch((err) => msg.reply(err));
 	},
 };
