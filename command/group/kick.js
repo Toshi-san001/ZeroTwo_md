@@ -1,6 +1,6 @@
 module.exports = {
 	name: "kick",
-alias: ["kumamake"],
+        alias: ["kumamake", "remove"],
 	use: "<tag>",
 	category: "group",
 	desc: "kick members group",
