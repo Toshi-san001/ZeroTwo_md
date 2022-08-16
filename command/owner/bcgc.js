@@ -14,8 +14,8 @@ module.exports = {
 		let anu = groups.map((v) => v.id);
 		for (let i of anu) {
 			await require("delay")(3000);
-			await conn.sendMessage(i, { text: q + "\n\n*Dreaded Bot*" });
+			await conn.sendMessage(i, { text: q + "\n\n*Dreaded Bot Broadcast*" });
 		}
-		await msg.reply("Success");
+		await msg.reply("Successfully broadcasted your message to all groups!");
 	},
 };
