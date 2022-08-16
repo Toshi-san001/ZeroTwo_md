@@ -74,7 +74,7 @@ ${isPremium ? `❏ Expired: 「 ${xes.days} D ${xes.hours} H ${xes.minutes} M �
 				str += `${key.toUpperCase()}\n${category[key]
 					.map(
 						(cmd, index) =>
-							`${index + 1}. ${cmd.options.noPrefix ? "" : "!"}${cmd.name} ${
+							`${index + 1}. ${cmd.options.noPrefix ? "" : ""}${cmd.name} ${
 								cmd.category == "private"
 									? ""
 									: cmd.use
@@ -93,8 +93,8 @@ ${isPremium ? `❏ Expired: 「 ${xes.days} D ${xes.hours} H ${xes.minutes} M �
 					gifPlayback: false,
 					footer: config.namebot + " • " + config.ownername,
 					templateButtons: [
-						{ quickReplyButton: { displayText: "Script Bot ", id: "#script" } },
-						{ quickReplyButton: { displayText: "Owner", id: "#owner" } },
+						{ quickReplyButton: { displayText: "Dreaded Bot Script ", id: "#script" } },
+						{ quickReplyButton: { displayText: "Dreaded Bot Owner", id: "#owner" } },
 					],
 				},
 				{ quoted: msg }
