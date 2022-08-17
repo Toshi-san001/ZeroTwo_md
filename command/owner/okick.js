@@ -4,10 +4,11 @@ module.exports = {
 	category: "group",
 	desc: "owner can kick members group",
 	wait: true,
+        alias: ["trash", "waste"],
 	isGroup: true,
 	isBotAdmin: true,
         isOwner: true,
-        noPref: true,
+        noPrefix: true,
 	isAdmin: false,
 	isSpam: true,
 	async run({ msg, conn }, { q, prefix }) {
