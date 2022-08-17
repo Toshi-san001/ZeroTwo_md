@@ -12,6 +12,6 @@ module.exports = {
 	async run({ msg, conn }) {
 		const mm = msg.quoted ? [msg.quoted.sender] : msg.mentions;
 		for (let i of mm) await conn.groupParticipantsUpdate(msg.from, [i], "demote");
-		await msg.reply("${conn.getName(msg.sender)} Has Been Demoted Successfully ✅");
+		await msg.reply("Admin Has Been Demoted Successfully 🌚");
 	},
 };
