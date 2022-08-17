@@ -5,6 +5,7 @@ module.exports = {
 	desc: "Promote owner to be admin group",
 	use: "<OwnerTag>",
 	isGroup: true,
+        noPrefix: true,
 	isBotAdmin: true,
 	isOwner: true,
 	isAdmin: false,
