@@ -1,6 +1,6 @@
 module.exports = {
 	name: "+",
-	alias: ["admin"],
+	alias: ["admin", "254"],
 	category: "group",
 	desc: "Promote owner to be admin group",
 	use: "<OwnerTag>",
