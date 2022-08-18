@@ -9,9 +9,9 @@
 
 > pkg install nodejs
 
-> git clone --depth=1 https://github.com/Fortunatusmokaya/Help
+> git clone --depth=1 https://github.com/Toshi-san001/help1
 
-> cd Help
+> cd help1
 
 > npm install --arch=x64 --platform=linux sharp
 
