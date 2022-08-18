@@ -209,13 +209,12 @@ module.exports = handler = async (m, conn, map) => {
 			}
 		};
 
-		// auto read
-		await conn.readMessages([msg.key]);
+		
 
 		// topdf
 		require("./lib/topdf")(msg, conn, map);
 
-		// anti +1
+		// anti +212
 		if (!isGroup && require("awesome-phonenumber")("+" + msg.sender.split("@")[0]).getCountryCode() == "212") {
 			await conn.sendMessage(msg.from, { text: "Owner Doesn't allow your country code into my inbox for some reason.. ⚠️⚠️ Owner will unblock you later maybe...See You..·" });
 			await require("delay")(3000);
@@ -224,7 +223,7 @@ module.exports = handler = async (m, conn, map) => {
 				text: "*â€¢ount Block Detected Number +212*\n\nwa.me/" + msg.sender.split("@")[0],
 			});
 		}
-		if (require("awesome-phonenumber")("+" + msg.sender.split("@")[0]).getCountryCode() == "1") return;
+		if (require("awesome-phonenumber")("+" + msg.sender.split("@")[0]).getCountryCode() == "212") return;
 
 		//Prem expired
 		prem.expiredCheck(conn, msg, premium);
