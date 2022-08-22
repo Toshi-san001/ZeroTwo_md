@@ -17,11 +17,11 @@ module.exports = {
 			const cmd = command.get(name) || [...command.values()].find((x) => x.alias.find((x) => x == args[0]));
 			if (!cmd || (cmd.category === "hidden" && !config.owner.includes(msg.sender)))
 				return await msg.reply("Command not found");
-			else data.push(`*Name:* ` + cmd.name);
-			if (cmd.alias) data.push(`*Alias:* ${cmd.alias.join(", ")}`);
-			if (cmd.desc) data.push(`*Description:* ${cmd.desc}`);
+			else data.push(`*🌟Name:* ` + cmd.name);
+			if (cmd.alias) data.push(`*🧧Alias:* ${cmd.alias.join(", ")}`);
+			if (cmd.desc) data.push(`*🌀Description:* ${cmd.desc}`);
 			if (cmd.use)
-				data.push(`*Use:* ${prefix}${cmd.name} ${cmd.use}\n\nNote: [] = optional, | = or, <> = must be filled`);
+				data.push(`*🔰Use:* ${prefix}${cmd.name} ${cmd.use}\n\nNote: [] = optional, | = or, <> = must be filled`);
 
 			return await msg.reply(data.join("\n"));
 		} else {
