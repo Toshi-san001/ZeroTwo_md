@@ -29,7 +29,7 @@ const spinnies = new Spinnies({
 const moment = require("moment");
 const { self } = require("./config.json");
 const { state, saveState } = useSingleFileAuthState(path.join(__dirname, `./${session}`), log({ level: "silent" }));
-attribute.prefix = "#";
+attribute.prefix = "+";
 
 // Set country code
 moment.tz.setDefault(config.timezone).locale(config.locale);
@@ -94,7 +94,7 @@ const limitData = cron.schedule(
 let data = fs.readFileSync(path.join(__dirname, "doom.flf"), "utf8");
 require("figlet").parseFont("doom", data);
 require("figlet").text(
-	"DREADED MD",
+	"Zerus MD",
 	{
 		font: "doom",
 		horizontalLayout: "default",
@@ -229,7 +229,7 @@ const connect = async () => {
 	ikyEvent.on("viewOnceMessage", async (get) => {
 		await conn.sendMessage(
 			get.remoteJid,
-			{ text: `@${get.participant.split("@")[0]} Terdeteksi Mengirim view once...`, withTag: true },
+			{ text: `@${get.participant.split("@")[0]} Detected Sending view once...`, withTag: true },
 			{ quoted: get.message }
 		);
 		await conn.sendMessage(get.remoteJid, { forward: get.message }, { quoted: get.message });
@@ -402,7 +402,7 @@ const connect = async () => {
 			froms,
 			{
 				text:
-					"Why delete that message? 🙄 @" +
+					"Why delete that message?🐤 @" +
 					participant.split("@")[0] +
 					`\n\n*➤ Info*\n*• Participant:* ${participant.split("@")[0]}\n*• Message Deleted:* ${moment(
 						Date.now()
