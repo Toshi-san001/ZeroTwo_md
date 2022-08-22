@@ -23,7 +23,7 @@ function printLog(isCmd, sender, msg, body, groupName, isGc) {
 	addBalance(msg.sender, Math.floor(Math.random() * 20), balance);
 	if (isCmd && isGc) {
 		return console.log(
-			color("[ DREADED BOT ]", "aqua"),
+			color("[ TOSHI MD ]", "aqua"),
 			color(sender.split("@")[0], "lime"),
 			color(body, "aqua"),
 			"in",
@@ -33,7 +33,7 @@ function printLog(isCmd, sender, msg, body, groupName, isGc) {
 
 
 	if (isCmd && !isGc) {
-		return console.log(color("[ DREADED BOT ]", "aqua"), color(sender.split("@")[0], "lime"), color(body, "aqua"));
+		return console.log(color("[ TOSHI BOT ]", "aqua"), color(sender.split("@")[0], "lime"), color(body, "aqua"));
 	}
 }
 module.exports = handler = async (m, conn, map) => {
@@ -74,7 +74,7 @@ module.exports = handler = async (m, conn, map) => {
 		const botAdmin = isGroup ? (await getAdmin(conn, msg)).includes(conn.decodeJid(conn.user.id)) : false;
 		const isOwner = owner.includes(sender);
 
-		let temp_pref = multi_pref.test(body) ? body.split("").shift() : "#";
+		let temp_pref = multi_pref.test(body) ? body.split("").shift() : "+";
 		if (body) {
 			body = body.startsWith(temp_pref) ? body : "";
 		} else {
@@ -345,7 +345,7 @@ msg.reply(last.cnt);
 						msg.from,
 						{
 							video: { url: resu.video.nowm.video_url },
-							caption: await rzky.tools.parseResult(rz, { title: "Dreaded Auto Download" }),
+							caption: await rzky.tools.parseResult(rz, { title: "Toshi Auto Download" }),
 							templateButtons: [
 								{ urlButton: { displayText: "Source", url: link } },
 								{ quickReplyButton: { displayText: "AudioðŸŽ¶", id: "#tiktokaudio " + link } },
