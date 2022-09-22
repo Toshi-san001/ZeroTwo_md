@@ -1,10 +1,10 @@
 {
-  "name": "rzky-multidevice",
+  "name": "ZeroTwo",
   "version": "4.0.0",
   "main": "index.js",
   "depecrated": false,
   "license": "MIT",
-  "author": "RizkyFadilah",
+  "author": "Toshi_sama",
   "scripts": {
     "start": "node .",
     "format": "prettier --write '**/*.{md,js,json}'"
@@ -61,7 +61,7 @@
     "pino": "^7.6.5",
     "qrcode-terminal": "^0.12.0"
   },
-  "description": "Bot Whatsapp multi-device using Javascript",
+  "description": "Hii I am ZeroTwo i was written by Toshi by using Bailyes in javascript",
   "directories": {
     "lib": "lib",
     "database": "database",
@@ -69,7 +69,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fortunatusmokaya/Help.git"
+    "url": "git+https://github.com/Toshi-san001/ZeroTwo_md.git"
   },
   "keywords": [
     "bot-md",
@@ -82,7 +82,7 @@
     "WhatsApp"
   ],
   "bugs": {
-    "url": "https://github.com/Fortunatusmokaya/Help/issues"
+    "url": "https://github.com/Toshi-san001/ZeroTwo_md/issues"
   },
-  "homepage": "https://github.com/Fortunatusmokaya/Help#readme"
+  "homepage": "https://github.com/Toshi-san001/ZeroTwo_md#readme"
 }
