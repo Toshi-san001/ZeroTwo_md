@@ -88,10 +88,10 @@ ${isPremium ? `❏ Expired: 「 ${xes.days} D ${xes.hours} H ${xes.minutes} M �
 			await conn.sendMessage(
 				msg.from,
 				{
-					image: { url: config.thumb1 },
+					file: conn.sendMessage(m.chat, { audio: { url: "./src/ZeroTwo.mp3" }, mimetype: 'audio/mp4'},{quoted: m}),
 					caption: str,
-					gifPlayback: false,
-					footer: config.namebot + " • " + config.ownername,
+					gifPlayback: true,
+					footer: ZeroTwo,
 					templateButtons: [
 						{ quickReplyButton: { displayText: "Dreaded Bot Script ", id: "#script" } },
 						{ quickReplyButton: { displayText: "Dreaded Bot Owner", id: "#owner" } },
