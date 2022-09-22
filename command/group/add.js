@@ -11,7 +11,7 @@ module.exports = {
 	isSpam: true,
 	async run({ msg, conn }, { q, prefix }) {
 		add = q ? q : msg.quoted ? msg.quoted : false;
-		if (!add) return msg.reply("Example: " + prefix + "add 254114018035");
+		if (!add) return msg.reply("Example: " + prefix + "add +91960xxxxxxx");
 		q = msg.quoted ? msg.quoted.sender.split("@")[0] : q;
 		let prk = q.replace(/[^a-zA-Z0-9 ]/g, "").split(" ");
 		let chunk = [];
