@@ -8,7 +8,7 @@ module.exports = {
 	isSpam: true,
 	async run({ msg, conn }, { q }) {
 		let dataNeeded = db.cekDatabase("left", "id", msg.from);
-		if (!dataNeeded) throw "Left This group is not activated yet,\nActived on command: *#left 1*";
+		if (!dataNeeded) throw "Left This group is not activated yet,\nActived on command: *+left 1*";
 		let data = JSON.parse(require("fs").readFileSync("./database/left.json"));
 		let da = data.find((a) => a.id == msg.from);
 		da.teks = q;
