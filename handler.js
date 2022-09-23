@@ -73,11 +73,7 @@ module.exports = handler = async (m, conn, map) => {
 		const botAdmin = isGroup ? (await getAdmin(conn, msg)).includes(conn.decodeJid(conn.user.id)) : false;
 		const isOwner = owner.includes(sender);
 
-		let temp_pref = multi_pref.test(body) ? body.split("").shift() : "+";
-		if (body) {
-			body = body.startsWith(temp_pref) ? body : "";
-		} else {
-			body = "";
+		
 		}
 
 		const arg = body.substring(body.indexOf(" ") + 1);
