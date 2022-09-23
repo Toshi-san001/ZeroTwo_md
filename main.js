@@ -94,7 +94,7 @@ const limitData = cron.schedule(
 let data = fs.readFileSync(path.join(__dirname, "doom.flf"), "utf8");
 require("figlet").parseFont("doom", data);
 require("figlet").text(
-	"Zerus MD",
+	"❱❱❱❱❱ZeroTwo_MD❰❰❰❰❰",
 	{
 		font: "doom",
 		horizontalLayout: "default",
